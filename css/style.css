@@ -1,0 +1,331 @@
+main, main div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+* {
+  margin: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, b {
+  line-height: 1.50rem;
+  color: #8d8d8d;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
+body {
+  background-color: #fae5d4;
+}
+
+main {
+  height: 100vh;
+}
+
+main div:first-child {
+  height: 35vh;
+  margin-top: 15%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../image/Powerful-pana.jpg.png);
+}
+
+main div:last-child {
+  height: 65%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main button {
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+main button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+
+@media only screen and (min-width: 576px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main div:first-child {
+    width: 45%;
+    background-position: center center;
+    margin-top: 0%;
+    height: 90%;
+  }
+  main div:last-child {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 3.5rem !important;
+  }
+}
+
+/* navbar */
+.header label {
+  text-align: center;
+  -webkit-transition: .5s ease color;
+  transition: .5s ease color;
+  padding: 1px 3px 0px;
+  color: #fff;
+  line-height: 7vh;
+  height: 7vh;
+  font-size: 1.3rem;
+  display: block;
+}
+
+label i {
+  color: white;
+}
+
+.header {
+  background-color: rgba(219, 6, 6, 0.795);
+  -webkit-box-shadow: rgba(51, 51, 51, 0.61) 0 2px 20px;
+          box-shadow: rgba(51, 51, 51, 0.61) 0 2px 20px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+}
+
+.header input {
+  display: none;
+}
+
+.header .navbar {
+  height: 0vh;
+  display: none;
+  list-style: none;
+}
+
+.header input:checked + .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 93vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header li {
+  text-align: center;
+}
+
+.header li a {
+  text-transform: uppercase;
+  display: block;
+  -webkit-transition: .5s ease color;
+  transition: .5s ease color;
+  font-size: 1rem;
+  color: #fff;
+  padding: 5px;
+}
+
+.header li a:hover, .header label:hover {
+  color: black;
+  background-color: rgba(255, 0, 0, 0.356);
+}
+
+@media (min-width: 768px) {
+  .header label {
+    display: none;
+  }
+  .header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: auto;
+    padding: 0;
+  }
+  .header ul li {
+    padding: 0;
+    font-size: .3rem;
+  }
+  .header ul a {
+    font-size: .85rem;
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header .container ul {
+    width: 60%;
+    margin-left: auto;
+  }
+  ul li {
+    font-size: .5rem;
+  }
+}
+
+figure h5 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: 100;
+  line-height: 3rem;
+  text-align: center;
+}
+
+figure h3 {
+  font-size: 1.8rem;
+  margin: 0 0 20px;
+  text-align: center;
+  line-height: 3rem;
+}
+
+@media only screen and (min-width: 576px) {
+  figure h5 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  figure h5 {
+    margin-top: 20px;
+  }
+}
+
+section div {
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+section i {
+  font-size: 4rem;
+}
+
+section h2 {
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+@media only screen and (min-width: 576px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section div {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section div {
+    width: 30%;
+  }
+}
+
+footer {
+  background-color: #070707;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
